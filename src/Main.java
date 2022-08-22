@@ -21,7 +21,7 @@ public class Main {
         } else {
             if (OSClient == 1 && clientDeviceYear >= 2015) {
                 System.out.println("Приложение будет работать корректно на Android");
-            }else{
+            } else {
                 if (OSClient == 0 && clientDeviceYear < 2015) {
                     System.out.println("Установите облегченную версию приложения для iOS по ссылке");
                 } else {
@@ -34,10 +34,20 @@ public class Main {
 
         //Задача №3
 
-        }
         //Задача №4
-        //Задача №5
-        {
+        int deliveryDistance = 95;
+        if (deliveryDistance < 20) {
+            System.out.println("Потребуется 1 день");
+        } else {
+            if (deliveryDistance >= 20 && deliveryDistance <= 60) {
+                System.out.println("Потребуется 2 дня");
+            } else {
+                if (deliveryDistance >= 60 && deliveryDistance <= 100) {
+                    System.out.println("Потребуется 3 дня");
+                }
+            }
+        }
+            //Задача №5
             int monthNumber = 13;
 
             switch (monthNumber) {
@@ -80,11 +90,10 @@ public class Main {
                 case 13:
                     System.out.println("Такого месяца не существует");
                     break;
-
             }
         }
     }
-}
+
 
 
 
