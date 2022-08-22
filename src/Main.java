@@ -14,15 +14,27 @@ public class Main {
 
 
         //Задача №2
-        int clientOS2 = 0;
-        clientOS2 = 1;
+        int OSClient = 0;
         int clientDeviceYear = 2015;
-        if (clientOS2 == 0 && clientDeviceYear >= 2015) {
+        if (OSClient == 0 && clientDeviceYear >= 2015) {
             System.out.println("Приложение будет работать корректно на iOS");
+        } else {
+            if (OSClient == 1 && clientDeviceYear >= 2015) {
+                System.out.println("Приложение будет работать корректно на Android");
+            }else{
+                if (OSClient == 0 && clientDeviceYear < 2015) {
+                    System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+                } else {
+                    if (OSClient == 1 && clientDeviceYear < 2015) {
+                        System.out.println("Установите облегченную версию приложения для Android по ссылке");
+                    }
+                }
+            }
         }
 
-
         //Задача №3
+
+        }
         //Задача №4
         //Задача №5
         {
