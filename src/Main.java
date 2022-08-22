@@ -33,20 +33,28 @@ public class Main {
         }
 
         //Задача №3
-
-        //Задача №4
-        int deliveryDistance = 95;
-        if (deliveryDistance < 20) {
-            System.out.println("Потребуется 1 день");
+        int year = 2022;
+        if (year % 4 == 0) {
+            System.out.println("Это високосный год");
         } else {
-            if (deliveryDistance >= 20 && deliveryDistance <= 60) {
-                System.out.println("Потребуется 2 дня");
+            if (year / 4 != 0) {
+                System.out.println("Это не високосный год");
+            }
+
+
+            //Задача №4
+            int deliveryDistance = 95;
+            if (deliveryDistance < 20) {
+                System.out.println("Потребуется 1 день");
             } else {
-                if (deliveryDistance >= 60 && deliveryDistance <= 100) {
-                    System.out.println("Потребуется 3 дня");
+                if (deliveryDistance >= 20 && deliveryDistance <= 60) {
+                    System.out.println("Потребуется 2 дня");
+                } else {
+                    if (deliveryDistance >= 60 && deliveryDistance <= 100) {
+                        System.out.println("Потребуется 3 дня");
+                    }
                 }
             }
-        }
             //Задача №5
             int monthNumber = 13;
 
@@ -93,7 +101,9 @@ public class Main {
             }
         }
     }
+}
 
+            //*Задача №6
 
 
 
